@@ -1,0 +1,12 @@
+CREATE table Comments (
+    id VARCHAR(100),
+    parent_id VARCHAR(100),
+    link_id VARCHAR(100),
+    name VARCHAR(100),
+    author VARCHAR(100),
+    body VARCHAR(1000),
+    subreddit_id VARCHAR(100),
+    subreddit VARCHAR(200),
+    score int(11),
+    created_utc VARCHAR(100)
+    );
