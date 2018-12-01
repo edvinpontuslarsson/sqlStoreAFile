@@ -4,11 +4,11 @@ CREATE table Comments (
     link_id VARCHAR(100),
     name VARCHAR(100),
     author VARCHAR(100),
-    body VARCHAR(1000),
+    body VARCHAR(11000),
     subreddit_id VARCHAR(100),
     subreddit VARCHAR(200),
     score int(11),
     created_utc VARCHAR(100)
-    );
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 // just add NOT NULL ???
