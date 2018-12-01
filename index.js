@@ -1,7 +1,13 @@
 'use strict'
 
 const getFilePath = require('./lib/getFilePath')
-const storeFile = require('./lib/storeFile')
+const getValues = require('./lib/getValues')
+const storeValues = require('./lib/storeValues')
 
-const filePath = getFilePath()
-storeFile(filePath)
+;(async () => {
+    let startTime = new Date()
+
+    const filePath = getFilePath()
+    const values = await getValues(filePath)
+    storeValues(values, startTime)
+})()
