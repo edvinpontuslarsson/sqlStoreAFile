@@ -10,3 +10,5 @@ CREATE table Comments (
     score int(11),
     created_utc VARCHAR(100)
     );
+
+// just add NOT NULL ???

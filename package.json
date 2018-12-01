@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^6.1.0",
     "line-by-line": "^0.1.6",
-    "mysql": "^2.16.0"
+    "mysql": "^2.16.0",
+    "sqlstring": "^2.3.1"
   }
 }
