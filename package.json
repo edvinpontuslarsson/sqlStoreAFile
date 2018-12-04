@@ -11,9 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^6.1.0",
-    "line-by-line": "^0.1.6",
-    "mysql": "^2.16.0",
-    "node-mysql": "^0.4.2",
-    "sqlstring": "^2.3.1"
+    "mysql": "^2.16.0"
   }
 }
