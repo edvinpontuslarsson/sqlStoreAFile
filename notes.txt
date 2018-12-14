@@ -1,23 +1,14 @@
-CREATE TABLE Authors (
-  author VARCHAR(100),
-  combined_score INT(11),
-  subreddit_specialist BIT,
-  latest_subreddit_id VARCHAR(100)
-);
+CREATE table Comments (
+    id VARCHAR(100),
+    parent_id VARCHAR(100),
+    link_id VARCHAR(100),
+    name VARCHAR(100),
+    author VARCHAR(100),
+    body VARCHAR(11000),
+    subreddit_id VARCHAR(100),
+    subreddit VARCHAR(200),
+    score int(11),
+    created_utc VARCHAR(100)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE Subreddits (
-  Subreddit_id VARCHAR(100),
-  Subreddit VARCHAR(1000)
-);
 
-CREATE TABLE Comments (
-  id VARCHAR(100),
-  parent_id VARCHAR(100),
-  link_id VARCHAR(100),
-  name VARCHAR(100),
-  author VARCHAR(100),
-  body VARCHAR(15000),
-  subreddit_id VARCHAR(100),
-  score INT(9),
-  created_utc VARCHAR(100)
-);
