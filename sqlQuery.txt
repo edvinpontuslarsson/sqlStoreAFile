@@ -4,7 +4,7 @@ CREATE table Comments (
     link_id VARCHAR(100),
     name VARCHAR(100),
     author VARCHAR(100),
-    body VARCHAR(11000),
+    body BLOB(60000),
     subreddit_id VARCHAR(100),
     subreddit VARCHAR(200),
     score int(11),
