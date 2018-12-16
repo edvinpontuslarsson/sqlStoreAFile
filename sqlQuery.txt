@@ -1,3 +1,5 @@
+// Constraints:
+
 CREATE table Comments (
     id VARCHAR(100),
     parent_id VARCHAR(100),
@@ -23,4 +25,28 @@ CREATE table Authors (
     subreddit_specialist BIT(1)
 );
 
+// No constraints:
 
+CREATE table Comments (
+    id VARCHAR(100),
+    parent_id VARCHAR(100),
+    link_id VARCHAR(100),
+    name VARCHAR(100),
+    author VARCHAR(100),
+    body TEXT(60000),
+    subreddit_id VARCHAR(100),
+    score int(11),
+    created_utc VARCHAR(100)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE table Subreddits (
+    subreddit_id VARCHAR(100),
+    subreddit VARCHAR(200)
+);
+
+CREATE table Authors (
+    author VARCHAR(100),
+    latest_subreddit_id VARCHAR(100),
+    combined_score int(11),
+    subreddit_specialist BIT(1)
+);
