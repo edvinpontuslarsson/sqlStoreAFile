@@ -17,8 +17,9 @@ CREATE table Subreddits (
 
 CREATE table Authors (
     author VARCHAR(100),
-    combined_score int(11),
+    latest_score int(11),
     latest_subreddit_id VARCHAR(100),
+    combined_score int(11),
     subreddit_specialist BIT(1)
 );
 
