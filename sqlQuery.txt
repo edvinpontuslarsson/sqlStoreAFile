@@ -19,9 +19,7 @@ CREATE table Subreddits (
 
 CREATE table Authors (
     author VARCHAR(100) NOT NULL PRIMARY KEY,
-    latest_subreddit_id VARCHAR(100) NOT NULL,
-    combined_score int(11) NOT NULL,
-    subreddit_specialist BIT(1)
+    combined_score int(11) NOT NULL
 );
 
 // No constraints:
@@ -45,7 +43,5 @@ CREATE table Subreddits (
 
 CREATE table Authors (
     author VARCHAR(100),
-    latest_subreddit_id VARCHAR(100),
-    combined_score int(11),
-    subreddit_specialist BIT(1)
+    combined_score int(11)
 );
